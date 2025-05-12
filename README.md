@@ -1,12 +1,12 @@
 # 📖 开始阅读
 
 - Docusaurus 主题：Landing
-- [![](https://img.shields.io/badge/QQ%E7%BE%A4-611076407-54B4EF)](https://8aka.org/qq)
+- [![](https://img.shields.io/badge/QQ%E7%BE%A4-757186305-54B4EF)](https://qm.qq.com/q/6R80KRgTZK)
 
 # 🔨 构建文档
 
 > [!NOTE]
-> 请先安装 Node.js ^18.0 和 npm
+> 请先安装 Node.js ^18.0 和 npm ^10.0
 
 1. 将此仓库克隆至本地
    `git clone https://github.com/EarlyDreamLand/EarlyDreamLand_Wiki.git`
