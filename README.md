@@ -1,6 +1,8 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/082057fe-9622-414b-8878-16de22065c63/deploy-status)](https://app.netlify.com/sites/edl-wiki/deploys)
+
 # 📖 开始阅读
 
-- Docusaurus 主题：Landing
+- Docusaurus 主题：https://edl-wiki.netlify.app/
 - [![](https://img.shields.io/badge/QQ%E7%BE%A4-757186305-54B4EF)](https://qm.qq.com/q/6R80KRgTZK)
 
 # 🔨 构建文档
@@ -14,8 +16,10 @@
    `cd EarlyDreamLand_Wiki`
 3. 安装依赖
    `npm install`
-4. 构建文档 & 测试
+4. 部署测试
    `npm run start`
+4. 构建文档
+   `npm run build`
 
 # ⬆️ 提交贡献
 
