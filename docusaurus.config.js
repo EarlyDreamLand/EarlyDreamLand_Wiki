@@ -10,7 +10,16 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '初梦大陆服务器帮助文档',
+  future: {
+    experimental_faster: true,
+  },
+
+  customFields: {
+    titlePrefix: '主页', // 标题前缀
+    start: "快速开始 🥵", // 开始按钮
+  },
+  
+  title: '初梦大陆 Wiki',
   tagline: '在这里可以找到你在初梦大陆服务器中需要的帮助、问题或内容',
   favicon: 'img/favicon.ico',
 
@@ -33,7 +42,23 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    locales: ['zh-Hans','en'],
+    localeConfigs: {
+      'zh-Hans': {
+        label: '简体中文',
+        direction: 'ltr',
+        htmlLang: 'zh-CN',
+        calendar: 'gregory',
+        path: 'zh-Hans',
+      },
+      'en': {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+    },
   },
 
   presets: [
@@ -86,9 +111,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '关于我们',
+            label: '快速开始',
           },
-          {to: '/blog', label: '最新资讯', position: 'left'},
+          {to: '/blog', label: '关于我们', position: 'left'},
           {
             href: 'https://github.com/EarlyDreamLand/EarlyDreamLand_Wiki',
             label: 'GitHub',
@@ -112,8 +137,8 @@ const config = {
             title: '交流',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'QQ群',
+                href: 'https://qm.qq.com/q/UCl1KJ3Aku',
               },
             ],
           },

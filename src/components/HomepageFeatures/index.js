@@ -1,35 +1,33 @@
+import React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: '简单易用',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        从零开始的手把手教程，简单明了的指引让玩家也能快速上手，轻松开始自己的Minecraft服务器旅途。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '详细全面',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        涵盖服务器命令、游戏技巧等方方面面，提供深入的指导和丰富的技巧，助你从新手成长为全服第一。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '持续更新',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        内容紧跟Minecraft最新版本，定期更新游戏教程和最佳实践，确保你获取最前沿的我的世界知识。
       </>
     ),
   },
