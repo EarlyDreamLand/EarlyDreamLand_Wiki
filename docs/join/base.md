@@ -70,3 +70,4 @@ import TabItem from '@theme/TabItem';
 
 
 恭喜你进入服务器啦 🎉，开始时你可能会不知所措。请先设置自己的家（重生点）吧、指令是`/sethome jia`，然后开始开始建些什么吧！
+
