@@ -106,7 +106,6 @@ const config = {
             position: 'left',
             label: '实用教程',
           },
-          {to: '/blog', label: '关于我们', position: 'left'},
           {
             href: 'https://github.com/EarlyDreamLand/EarlyDreamLand_Wiki',
             label: 'GitHub',
@@ -138,10 +137,6 @@ const config = {
           {
             title: '更多',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
