@@ -163,9 +163,10 @@ const config = {
       },
       // 搜索
       algolia: {
-        appId: 'xxxx',
-        apiKey: 'xxxxxxx',
-        indexName: 'nuoxi4n',
+        appId: 'KO57183DTL',
+        apiKey: 'ce9a6eccb01e031e69cf5be55d3dec87',
+        indexName: 'edl-wiki',
+        insights: true,
       },
     }),
 };
