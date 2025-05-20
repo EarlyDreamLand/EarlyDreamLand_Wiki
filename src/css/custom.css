@@ -6,25 +6,130 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* 主色系 */
+  --primary: #25a06e;
+  --primary-dark: #1c714e;
+  --primary-light: #36c085;
+  --primary-lighter: #4fd197;
+  --primary-lightest: #7eddae;
+  --primary-darker: #195f41;
+  --primary-darkest: #134931;
+
+  /* 文本颜色 */
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-light: #a0aec0;
+
+  /* 背景颜色 */
+  --bg-light: #f8f9fa;
+  --bg-dark: #1a202c;
+  --bg-card: #f0f2f5;
+  --bg-footer-light: #f0f4f8;
+
+ /* Docusaurus主题变量映射 */
+  --ifm-color-primary: var(--primary);
+  --ifm-color-primary-dark: var(--primary-dark);
+  --ifm-color-primary-darker: var(--primary-darker);
+  --ifm-color-primary-darkest: var(--primary-darkest);
+  --ifm-color-primary-light: var(--primary-light);
+  --ifm-color-primary-lighter: var(--primary-lighter);
+  --ifm-color-primary-lightest: var(--primary-lightest);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* 页脚基础样式 */
+.footer {
+  color: var(--text-secondary);
+  padding: 3rem 0 2rem;
+  transition: background-color var(--transition-base), border-color var(--transition-base);
+  background-color: var(--bg-footer-light);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.02);
+}
+
+/* 页脚标题 */
+.footer__title {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* 页脚链接 */
+.footer__link-item {
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+  padding: 0.25rem 0;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.footer__link-item:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* 页脚版权信息 */
+.footer__copyright {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  margin-top: 2.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* 页脚列样式 */
+.footer__col {
+  margin-bottom: 1.5rem;
+}
+
+/* 页脚底部装饰线 */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  opacity: 0.6;
+}
+
+
+/* ===== 16. 响应式调整 ===== */
+@media (max-width: 996px) {
+  /* 页脚响应式调整 */
+  .footer {
+    padding: 2rem 0 1.5rem;
+  }
+  
+  .footer__col {
+    margin-bottom: 2rem;
+  }
+  
+  .footer__copyright {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+}
+
+/* 小屏幕适配 */
+@media (max-width: 576px) {
+  /* 页脚小屏幕优化 */
+  .footer {
+    padding: 1.5rem 0 1rem;
+    text-align: center;
+  }
+  
+  .footer__title {
+    margin-top: 1rem;
+  }
+  
+  .footer__link-item {
+    padding: 0.35rem 0;
+  }
+  
+  .footer__copyright {
+    margin-top: 1rem;
+  }
 }

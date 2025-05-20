@@ -87,6 +87,11 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: '初梦大陆 Wiki',
         logo: {
@@ -120,7 +125,7 @@ const config = {
             title: '文档',
             items: [
               {
-                label: 'Tutorial',
+                label: '服务器规则',
                 to: '/docs/intro',
               },
             ],
@@ -139,7 +144,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/EarlyDreamLand/EarlyDreamLand_Wiki',
               },
             ],
           },
