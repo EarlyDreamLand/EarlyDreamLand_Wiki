@@ -115,6 +115,10 @@ const config = {
             label: '实用教程',
           },
           {
+            type: 'search',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/EarlyDreamLand/EarlyDreamLand_Wiki',
             className: "header-github-link",
             position: 'right',
@@ -156,7 +160,12 @@ const config = {
       },
       prism: {
         theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+      },
+      // 搜索
+      algolia: {
+        appId: 'xxxx',
+        apiKey: 'xxxxxxx',
+        indexName: 'nuoxi4n',
       },
     }),
 };
