@@ -42,7 +42,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans','en'],
+    locales: ['zh-Hans'],
     localeConfigs: {
       'zh-Hans': {
         label: '简体中文',
@@ -51,15 +51,12 @@ const config = {
         calendar: 'gregory',
         path: 'zh-Hans',
       },
-      'en': {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        calendar: 'gregory',
-        path: 'en',
-      },
     },
   },
+
+  clientModules: [
+    require.resolve('./src/clientModules/githubIconModule.js'),
+  ],
 
   presets: [
     [
@@ -76,7 +73,10 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/github.css'),
+          ],
         },
       }),
     ],
@@ -92,6 +92,9 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
+      metadata: [
+        {name: 'keywords', content: 'Minecraft, 红石教程, MC, 初梦大陆, 服务器, 我的世界, WIKI'},
+      ],
       navbar: {
         title: '初梦大陆 Wiki',
         logo: {
@@ -113,7 +116,7 @@ const config = {
           },
           {
             href: 'https://github.com/EarlyDreamLand/EarlyDreamLand_Wiki',
-            label: 'GitHub',
+            className: "header-github-link",
             position: 'right',
           },
         ],
