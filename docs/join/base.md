@@ -51,16 +51,21 @@ import TabItem from '@theme/TabItem';
 
 ### 为什么要下载安装Java？
 
-顾名思义，Java版Mincecraft需要安装Java才能游玩，所以要在启动游戏前确保Java已安装合适的版本。
+:::note 提示
 
-下载地址：https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.exe
+Java21下载地址：https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.exe
+
+:::
+
+
+顾名思义，Java版Mincecraft需要安装Java才能游玩，所以要在启动游戏前确保Java已安装合适的版本。
 
 1. `Minceraft 1.21.5` 的版本需要安装 `Java 21` 才能正常游玩
 2. 下载 `Java 21` 后，打开并安装，并根据自己的情况来选择Java21安装路径
 
 ### 怎么在PCL2中配置第三方登录？
 
-:::tip 提示
+:::note 提示
 
 PCL2启动器下载地址：https://afdian.com/p/0164034c016c11ebafcb52540025c377
 
