@@ -104,15 +104,20 @@ const config = {
         hideOnScroll: true,
         items: [
           {
-            to: '/docs/intro',
-            sidebarId: 'tutorialSidebar',
+            to: 'docs/category/加入服务器',
             position: 'left',
-            label: '通用',
+            label: '加入服务器',
           },
           {
             to: 'docs/category/实用教程',
             position: 'left',
             label: '实用教程',
+          },
+          {
+            to: '/docs/intro',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '关于我们',
           },
           {
             type: 'search',
