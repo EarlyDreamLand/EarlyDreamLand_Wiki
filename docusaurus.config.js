@@ -101,16 +101,16 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
+        hideOnScroll: true,
         items: [
           {
-            type: 'docSidebar',
+            to: '/docs/intro',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '通用',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: 'docs/category/实用教程',
             position: 'left',
             label: '实用教程',
           },
