@@ -11,7 +11,25 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   future: {
-    experimental_faster: true,
+    v4: {
+      removeLegacyPostBuildHeadAttribute: true,
+      useCssCascadeLayers: true,
+    },
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      rspackPersistentCache: true,
+      ssgWorkerThreads: true,
+      mdxCrossCompilerCache: true,
+    },
+    experimental_storage: {
+      type: 'localStorage',
+      namespace: true,
+    },
+    experimental_router: 'hash',
   },
 
   customFields: {
@@ -114,12 +132,6 @@ const config = {
             label: '实用教程',
           },
           {
-            to: '/docs/intro',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: '关于我们',
-          },
-          {
             type: 'search',
             position: 'right',
           },
@@ -132,35 +144,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: '文档',
-            items: [
-              {
-                label: '服务器规则',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: '交流',
-            items: [
-              {
-                label: 'QQ群',
-                href: 'https://qm.qq.com/q/UCl1KJ3Aku',
-              },
-            ],
-          },
-          {
-            title: '更多',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/EarlyDreamLand/EarlyDreamLand_Wiki',
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} <b>诺仙网络</b>, All Rights Reserved.`,
       },
       prism: {
