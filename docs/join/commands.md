@@ -9,7 +9,7 @@ sidebar_position: 2
 | 指令 | 描述 |
 | -- | -- |
 | /server `服务器名` | 传送至指定服务器 |
-| /balance | 查询 `铜币` 余额 |
+| /balance | 查询 `梦想币` 余额 |
 
 ## 效率 (生存服)
 
@@ -17,5 +17,5 @@ sidebar_position: 2
 | -- | -- |
 | /home | 打开 `家` 管理菜单 |
 | /sethome `oioioi` | 设置一个名为 `oioioi` 的家 |
-| /balance | 查询 `铜币` 余额 |
+| /balance | 查询 `梦想币` 余额 |
 | /tpa `玩家名` | 传送到指定的玩家身边 |
