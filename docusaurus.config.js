@@ -149,7 +149,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} <b>诺仙网络</b>, All Rights Reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} <b>nuoxian</b>, All Rights Reserved.`,
       },
       prism: {
         theme: prismThemes.github,
