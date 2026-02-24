@@ -127,9 +127,9 @@ const config = {
         hideOnScroll: true,
         items: [
           {
-            to: 'docs/category/加入初梦',
+            to: 'docs/category/加入指南',
             position: 'left',
-            label: '加入初梦',
+            label: '加入指南',
           },
           {
             to: 'docs/category/实用教程',
