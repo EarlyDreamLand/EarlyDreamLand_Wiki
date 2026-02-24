@@ -1,9 +1,11 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/082057fe-9622-414b-8878-16de22065c63/deploy-status)](https://app.netlify.com/sites/edl-wiki/deploys)
-
-# 📖 开始阅读
-
-- Docusaurus 主题：https://edl-wiki.netlify.app/
-- [![](https://img.shields.io/badge/QQ%E7%BE%A4-757186305-54B4EF)](https://qm.qq.com/q/6R80KRgTZK)
+<p align="center">
+  <a href="https://wiki.11na.cn">
+    <img src="https://img.shields.io/badge/%E4%B8%BB%E9%A2%98-Docusaurus-4169E1" />
+  </a>
+  <a href="https://qm.qq.com/q/Ny9Wlx9yMM">
+    <img src="https://img.shields.io/badge/QQ%E7%BE%A4-757186305-54B4EF" />
+  </a>
+</p>
 
 # 🔨 构建文档
 
